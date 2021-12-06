@@ -17,7 +17,7 @@ public class CommonMethods {
 		wed.sendKeys(text);
 		
 	}
-	
+	//changes line by line
 	public void writeInPropertyFile(String path,String prpertyKey,String propertyValue) {
 		FileWriter fw=null;
 		try {
