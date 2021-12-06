@@ -42,4 +42,35 @@ public class CommonMethods {
 	}
 		
 	}
+	
+	
+	//entering browser and url
+	
+	public void enterBrowserUrlInPropertyFile(String path,String browser,String url) {
+		
+		FileWriter fw=null;
+		
+		try {
+			fw=new FileWriter(path);
+		} catch (IOException e) {
+			System.out.println(e);
+		}
+		
+		BufferedWriter bw=new BufferedWriter(fw);
+		
+		try {
+			bw.write("browser="+browser);
+			bw.newLine();
+			bw.write("url="+url);
+			
+		} catch (IOException e) {
+			System.out.println(e);
+		}
+	try {
+		bw.flush();
+		bw.close();
+	} catch (IOException e) {
+		System.out.println(e);
+	}
+	}
 }
