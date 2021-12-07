@@ -1,4 +1,5 @@
 testRuns\TestRunner1.class
 myHooks\MyHooks.class
+stepDefinations\DataProviderClass.class
 stepDefinations\StepDefination.class
 myHooks\WritingData.class

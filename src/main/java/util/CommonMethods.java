@@ -9,11 +9,11 @@ import org.openqa.selenium.WebElement;
 public class CommonMethods {
 
 	
-	public void  clickOnthePage(WebElement wed) {
+	public void  element_Click(WebElement wed) {
 		
 		wed.click();
 	}
-	public void sendingDataOnThePage(WebElement wed, String text) {
+	public void enterData(WebElement wed, String text) {
 		wed.sendKeys(text);
 		
 	}

@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,7 +114,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testRuns.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;scenario1&quot;, &quot;Optional[frature2]&quot;)">runScenario("scenario1", "Optional[frature2]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testRuns.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;scenario1&quot;, &quot;Optional[feature1]&quot;)">runScenario("scenario1", "Optional[feature1]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRuns.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;scenario1&quot;, &quot;Optional[feature1]&quot;)">runScenario("scenario1", "Optional[feature1]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -129,6 +134,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">myHooks.WritingData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterDataInPropertyFile(chrome, https://crossbrowsertesting.github.io/)">
+                  </a> <!-- enterDataInPropertyFile(chrome, https://crossbrowsertesting.github.io/) -->
+                  <span class="method-name">enterDataInPropertyFile</span>
+                  <span class="parameters">(chrome, https://crossbrowsertesting.github.io/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -147,28 +168,22 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;scenario1&quot;, &quot;Optional[frature2]&quot;)">
-                  </a> <!-- runScenario("scenario1", "Optional[frature2]") -->
+                  <a name="runScenario(&quot;scenario1&quot;, &quot;Optional[feature1]&quot;)">
+                  </a> <!-- runScenario("scenario1", "Optional[feature1]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("scenario1", "Optional[frature2]")</span>
+                  <span class="parameters">("scenario1", "Optional[feature1]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">myHooks.WritingData</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="enterDataInPropertyFile(chrome, https://crossbrowsertesting.github.io/)">
-                  </a> <!-- enterDataInPropertyFile(chrome, https://crossbrowsertesting.github.io/) -->
-                  <span class="method-name">enterDataInPropertyFile</span>
-                  <span class="parameters">(chrome, https://crossbrowsertesting.github.io/)</span>
+                  <a name="runScenario(&quot;scenario1&quot;, &quot;Optional[feature1]&quot;)">
+                  </a> <!-- runScenario("scenario1", "Optional[feature1]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("scenario1", "Optional[feature1]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -236,24 +251,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRuns.TestRunner1')
-data.setCell(0, 3, 7856);
+data.setCell(0, 3, 22881);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'testRuns.TestRunner1')
-data.setCell(1, 3, 4157);
+data.setCell(1, 3, 15181);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'enterDataInPropertyFile')
-data.setCell(2, 2, 'myHooks.WritingData')
-data.setCell(2, 3, 11);
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'testRuns.TestRunner1')
+data.setCell(2, 3, 10899);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'enterDataInPropertyFile')
+data.setCell(3, 2, 'myHooks.WritingData')
+data.setCell(3, 3, 15);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -288,20 +307,24 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testRuns.TestRunner1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@56f730b2)</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@17d2b075)</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("scenario1", "Optional[feature1]")</span>
-                <span class="method-start">552 ms</span>
+                <span class="method-start">580 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("scenario1", "Optional[frature2]")</span>
-                <span class="method-start">8408 ms</span>
+                <span class="method-name">runScenario("scenario1", "Optional[feature1]")</span>
+                <span class="method-start">23462 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("scenario1", "Optional[feature1]")</span>
+                <span class="method-start">34363 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">12579 ms</span>
+                <span class="method-start">49545 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -6,9 +6,8 @@
   <parameter name="url" value="https://crossbrowsertesting.github.io/"></parameter>
     <classes>
     
-    <class name="myHooks.WritingData"/>
-    <class name="testRuns.TestRunner1"></class>
-      
+    <class name="myHooks.WritingData"></class>
+     <class name="testRuns.TestRunner1"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
