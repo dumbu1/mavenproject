@@ -6,6 +6,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import util.InvokeBrowser;
 
+
 public class MyHooks {
 	private static WebDriver wd;
 	
@@ -20,15 +21,20 @@ public class MyHooks {
 	@Before(order = 2)
 	public void enterUrl() {
 		InvokeBrowser obj_InvokeBrowser=new InvokeBrowser();
-		obj_InvokeBrowser.enterUrl(wd);
+		wd=obj_InvokeBrowser.enterUrl(wd);
 	}
 	
 	
 	@After
 	public void closeBrowser() {
+		
 		wd.close();
 		wd.quit();
 	}
 	
+	
+	public WebDriver getDriver() {
+		return wd;
+	}
 
 }

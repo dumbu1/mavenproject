@@ -16,9 +16,10 @@ public class HomePage {
 	}
 
 	@FindBy(xpath = "//a[contains(text(),'Selenium Example Page')]")	
-	WebElement link_SeleniumPage;
-	public void click_Link() {
+	WebElement link_Selenium_Example_Page;
+	
+	public void click_Selenium_Example_Page() {
 		
-	obj_CommonMethods.clickOnthePage(link_SeleniumPage);	
+	obj_CommonMethods.element_Click(link_Selenium_Example_Page);	
 	}
 }
