@@ -3,15 +3,20 @@ package util;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class CommonMethods {
 
 	
-	public void  element_Click(WebElement wed) {
+	public void  element_Click(WebElement wed) throws InterruptedException {
 		
 		wed.click();
+		Thread.sleep(5000);
+		System.out.println(wed);
 	}
 	public void enterData(WebElement wed, String text) {
 		wed.sendKeys(text);
@@ -73,4 +78,18 @@ public class CommonMethods {
 		System.out.println(e);
 	}
 	}
+	
+	public List<String> select_Options(WebElement element) {
+	Select s=new Select(element);
+	
+	List<String> items=new ArrayList<>();
+	
+	int i=0;
+    List<WebElement> lOpt =s.getOptions();
+    for (WebElement webElement : lOpt) {
+	items.add(i, webElement.getText());
+	i++;
+	}
+    return items;
+	}	
 }

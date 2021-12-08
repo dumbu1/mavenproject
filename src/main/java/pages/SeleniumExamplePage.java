@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,14 +16,16 @@ public class SeleniumExamplePage {
 	}
 	
 	@FindBy(xpath = "//input[@type='text']")
-	WebElement text_Form_Elements;
+	private WebElement text_Form_Elements;
 	
 	@FindBy(xpath = "//textarea[@name='textarea']")
-	WebElement text_TextArea;
+	private WebElement text_TextArea;
 	
 	@FindBy(xpath = "//input[@id='submitbtn']")
-	WebElement button_Submit;
+	private WebElement button_Submit;
 
+	@FindBy(xpath = "//select[@id='dropdown']")
+	private WebElement select_Option;
 	
 	public void enterData_Form_Elements(String text) {
 		obj_CommonMethods.enterData(text_Form_Elements, text);
@@ -33,7 +37,11 @@ public class SeleniumExamplePage {
 		
 	}
 	
-	public void click_Submit() {
+	public void click_Submit() throws InterruptedException {
 		obj_CommonMethods.element_Click(button_Submit);
+	}
+	
+	public List<String> select_Options(){
+		return obj_CommonMethods.select_Options(select_Option);
 	}
 }

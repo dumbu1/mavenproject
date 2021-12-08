@@ -9,11 +9,36 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">136</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">114,419</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">stepDefinations.DataProviderClass</td><td><a href="#m0">fun1</a></td><td rowspan="2">1638811077110</td><td rowspan="2">2</td></tr><tr class="passedeven"><td><a href="#m1">fun1</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testRuns.TestRunner1</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1638950647528</td><td rowspan="1">16333</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">myHooks.WritingData</td><td><a href="#m1">enterDataInPropertyFile</a></td><td rowspan="1">1638950549570</td><td rowspan="1">16</td></tr><tr class="passedodd"><td rowspan="3">testRuns.TestRunner1</td><td><a href="#m2">runScenario</a></td><td rowspan="3">1638950618150</td><td rowspan="3">29373</td></tr><tr class="passedodd"><td><a href="#m3">runScenario</a></td></tr><tr class="passedodd"><td><a href="#m4">runScenario</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">stepDefinations.DataProviderClass#fun1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>mohan</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">stepDefinations.DataProviderClass#fun1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>krishna</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testRuns.TestRunner1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario1&quot;</td><td>&quot;Optional[feature2]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-N9QFJ52&apos;, ip: &apos;192.168.43.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//select[@id=&apos;dropdown&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\ignite\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65126/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
+	at util.CommonMethods.select_Options(CommonMethods.java:83)
+	at pages.SeleniumExamplePage.select_Options(SeleniumExamplePage.java:45)
+	at stepDefinations.StepDefination.user_check_the_list_box(StepDefination.java:27)
+	at ✽.user check the list box(file:///C:/Users/ignite/git/mavenproject/src/test/resources/features/feature2.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">myHooks.WritingData#enterDataInPropertyFile</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>chrome</td><td>https://crossbrowsertesting.github.io/</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testRuns.TestRunner1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario1&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testRuns.TestRunner1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario1&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testRuns.TestRunner1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario1&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

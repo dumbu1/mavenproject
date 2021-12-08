@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 06 22:47:56 IST 2021</td>
+<td>Started on:</td><td>Wed Dec 08 13:32:29 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (136 ms)</td>
+<tr><td>Total time:</td><td>114 seconds (114419 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,64 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRuns.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testRuns.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "scenario1", "Optional[feature2]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-N9QFJ52&apos;, ip: &apos;192.168.43.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//select[@id=&apos;dropdown&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\ignite\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65126/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
+	at util.CommonMethods.select_Options(CommonMethods.java:83)
+	at pages.SeleniumExamplePage.select_Options(SeleniumExamplePage.java:45)
+	at stepDefinations.StepDefination.user_check_the_list_box(StepDefination.java:27)
+	at ?.user check the list box(file:///C:/Users/ignite/git/mavenproject/src/test/resources/features/feature2.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1588635270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1588635270'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-N9QFJ52&apos;, ip: &apos;192.168.43.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//select[@id=&apos;dropdown&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\ignite\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65126/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
+	at util.CommonMethods.select_Options(CommonMethods.java:83)
+	at pages.SeleniumExamplePage.select_Options(SeleniumExamplePage.java:45)
+	at stepDefinations.StepDefination.user_check_the_list_box(StepDefination.java:27)
+	at ?.user check the list box(file:///C:/Users/ignite/git/mavenproject/src/test/resources/features/feature2.feature:6)
+</pre></div></td>
+<td>16</td>
+<td>testRuns.TestRunner1@2a7f1f10</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,15 +133,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='stepDefinations.DataProviderClass.fun1()'><b>fun1</b><br>Test class: stepDefinations.DataProviderClass<br>Parameters: mohan</td>
+<td title='testRuns.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testRuns.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "scenario1", "Optional[feature1]"</td>
 <td></td>
-<td>0</td>
-<td>stepDefinations.DataProviderClass@58695725</td></tr>
+<td>29</td>
+<td>testRuns.TestRunner1@2a7f1f10</td></tr>
 <tr>
-<td title='stepDefinations.DataProviderClass.fun1()'><b>fun1</b><br>Test class: stepDefinations.DataProviderClass<br>Parameters: krishna</td>
+<td title='testRuns.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testRuns.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "scenario1", "Optional[feature1]"</td>
+<td></td>
+<td>39</td>
+<td>testRuns.TestRunner1@2a7f1f10</td></tr>
+<tr>
+<td title='testRuns.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testRuns.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "scenario1", "Optional[feature1]"</td>
+<td></td>
+<td>27</td>
+<td>testRuns.TestRunner1@2a7f1f10</td></tr>
+<tr>
+<td title='myHooks.WritingData.enterDataInPropertyFile()'><b>enterDataInPropertyFile</b><br>Test class: myHooks.WritingData<br>Parameters: chrome, https://crossbrowsertesting.github.io/</td>
 <td></td>
 <td>0</td>
-<td>stepDefinations.DataProviderClass@58695725</td></tr>
+<td>myHooks.WritingData@272113c4</td></tr>
 </table><p>
 </body>
 </html>

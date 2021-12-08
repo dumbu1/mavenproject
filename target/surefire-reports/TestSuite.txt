@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 50.867 s - in TestSuite
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.182 s <<< FAILURE! - in TestSuite
+testRuns.TestRunner1.runScenario["scenario1", "Optional[feature2]"](1)  Time elapsed: 20.685 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+
